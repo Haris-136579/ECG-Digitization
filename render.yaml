@@ -5,7 +5,7 @@ services:
     plan: free
     buildCommand: pip install -r full-pipeline/requirements.txt
     startCommand: python full-pipeline/app.py
-    runtime: python3.10
+    runtime: python3.11
     envVars:
       - key: PYTHONUNBUFFERED
         value: "1"
