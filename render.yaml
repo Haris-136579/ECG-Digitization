@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ecg-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python full-pipeline/app.py
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
