@@ -3,7 +3,7 @@ services:
     name: ecg-api
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r full-pipeline/requirements.txt
     startCommand: python full-pipeline/app.py
     envVars:
       - key: PYTHONUNBUFFERED
